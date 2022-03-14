@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: Info.title,
-      initialRoute: '/asd',
+      initialRoute: Routes.root,
       routes: RouteConfig.routes,
       onGenerateRoute: RouteHandler.generateRoute,
       theme: AppTheme.light,
