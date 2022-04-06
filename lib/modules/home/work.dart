@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants/const.dart';
 import 'package:portfolio/models/models.dart';
-import 'package:portfolio/util/layout/responsive_layout_builder.dart';
+import 'package:portfolio/util/util.dart';
 
 import '../widgets/widgets.dart';
 

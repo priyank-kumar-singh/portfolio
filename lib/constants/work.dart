@@ -6,6 +6,7 @@ import 'assets/assets.gen.dart';
 
 abstract class Work {
   static const _medium = 'https://priyank-kumar-singh.medium.com/';
+  static const _github = 'https://github.com/priyank-kumar-singh/';
 
   static const _learnMore = WorkDescription('Wanna learn more about the application, just follow the links given below');
 
@@ -27,7 +28,7 @@ abstract class Work {
   static final projects = [
     ProjectItem(
       title: 'Slide Puzzle',
-      route: Routes.projects + '/slide_puzzle',
+      route: Routes.projects + 'slide_puzzle',
       asset: Assets.images.projects.slidePuzzle.path,
       details: const [
         WorkDescription('Slide Puzzle is puzzle game, where the player has to rearrange pieces of puzzle by tap the tiles.'),
@@ -46,19 +47,19 @@ abstract class Work {
           RichTextItem(
             'click-here...',
             'https://slide-puzzle-6ac4a.web.app/',
-          )
+          ),
         ]),
         _learnMore,
       ],
       links: const [
-        WorkLink(SocialMediaIcons.github, 'https://github.com/priyank-kumar-singh/flutter_puzzle_hack'),
+        WorkLink(SocialMediaIcons.github, _github + 'flutter_puzzle_hack'),
         WorkLink(SocialMediaIcons.youtube, 'https://youtu.be/Vr5k9MhQDwc'),
       ],
     ),
 
     ProjectItem(
       title: 'Smart Parking',
-      route: Routes.projects + '/smart_parking',
+      route: Routes.projects + 'smart_parking',
       asset: Assets.images.projects.smartParking.path,
       details: const [
         WorkDescription('Finding the perfect parking slot is a tiresome job. Plus the unskilled labor monitoring parking places are an add-on to the stress and delay. What if all this could be done by a machine efficiently and promote skill development?'),
@@ -72,13 +73,13 @@ abstract class Work {
         _learnMore,
       ],
       links: const [
-        WorkLink(SocialMediaIcons.github, 'https://github.com/priyank-kumar-singh/Hack-O-Futurista'),
-        WorkLink(SocialMediaIcons.link, 'https://drive.google.com/drive/folders/10J_IIcoy6cHo2PORTqjXH7N7P6hTueNP?usp=sharing')
+        WorkLink(SocialMediaIcons.github, _github + 'Hack-O-Futurista'),
+        WorkLink(SocialMediaIcons.link, 'https://drive.google.com/drive/folders/10J_IIcoy6cHo2PORTqjXH7N7P6hTueNP?usp=sharing'),
       ],
     ),
     ProjectItem(
       title: 'Apna Paryavaran',
-      route: Routes.projects + '/paryavaran',
+      route: Routes.projects + 'paryavaran',
       asset: Assets.images.projects.paryavaran.path,
       description: 'Join hands to save the land.',
       details: const [
@@ -87,13 +88,13 @@ abstract class Work {
         _learnMore,
       ],
       links: const [
-        WorkLink(SocialMediaIcons.github, 'https://github.com/priyank-kumar-singh/Hack2K21-IIITPune'),
+        WorkLink(SocialMediaIcons.github, _github + 'Hack2K21-IIITPune'),
         WorkLink(SocialMediaIcons.link, 'https://drive.google.com/drive/folders/1nrsbmaWQqJvDTaEWr3F9QOaIkRocRF7W?usp=sharing'),
       ],
     ),
     ProjectItem(
       title: 'Healthsy',
-      route: Routes.projects + '/healthsy',
+      route: Routes.projects + 'healthsy',
       asset: Assets.images.projects.healthsy.path,
       description: 'Predict diseases related to Heart, Liver, Diabetes, Eyes, and Ears, by entering some checkup report data, and the application will do the rest all with the power of machine learning',
       details: const [
@@ -103,13 +104,13 @@ abstract class Work {
         _learnMore,
       ],
       links: const [
-        WorkLink(SocialMediaIcons.github, 'https://github.com/priyank-kumar-singh/Healthsy_App'),
-        WorkLink(SocialMediaIcons.youtube, 'https://www.youtube.com/watch?v=QNDkfGR1ekE&t=81s'),
-      ]
+        WorkLink(SocialMediaIcons.github, _github + 'Healthsy_App'),
+        WorkLink(SocialMediaIcons.youtube, 'https://youtu.be/QNDkfGR1ekE'),
+      ],
     ),
     ProjectItem(
       title: 'Flash Chat Messenger',
-      route: Routes.projects + '/flashchatmessenger',
+      route: Routes.projects + 'flashchatmessenger',
       asset: Assets.images.projects.flashChat.path,
       description: 'A real-time chat application that includes end-to-end encryption, one-to-one messaging, group messaging, broadcast messages, and more features.',
       details: const [
@@ -117,12 +118,13 @@ abstract class Work {
         _learnMore,
       ],
       links: const [
+        WorkLink(SocialMediaIcons.github, _github + 'flash-chat-messenger'),
         WorkLink(SocialMediaIcons.youtube, 'https://youtu.be/AT6xLOcwtMQ'),
       ],
     ),
     ProjectItem(
       title: 'Authenticator Clone',
-      route: Routes.projects + '/authenticator',
+      route: Routes.projects + 'authenticator',
       asset: Assets.images.projects.authenticator.path,
       details: const [
         WorkDescription('Authenticator is a software-based authenticator that implements two-step verification services using the Time-based One-time Password Algorithm and HMAC-based One-time Password algorithm, for authenticating users of software applications.'),
@@ -130,7 +132,7 @@ abstract class Work {
         _learnMore,
       ],
       links: const [
-        WorkLink(SocialMediaIcons.github, 'https://github.com/priyank-kumar-singh/authenticator-clone'),
+        WorkLink(SocialMediaIcons.github, _github + 'authenticator-clone'),
       ],
     ),
   ];

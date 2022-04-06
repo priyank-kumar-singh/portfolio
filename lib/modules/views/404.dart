@@ -64,7 +64,7 @@ class PageNotFoundScreen extends StatelessWidget {
           ElevatedButton(
             child: const Text('GO HOME'),
             onPressed: () {
-              Navigator.of(context).pushNamedAndRemoveUntil(Routes.root, (route) => false);
+              Navigator.of(context).pushNamedAndRemoveUntil(Routes.from404, (route) => false);
             },
           ),
         ],

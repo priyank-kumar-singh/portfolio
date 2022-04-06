@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/config/config.dart';
 import 'package:portfolio/constants/const.dart';
-import 'package:portfolio/util/helpers/url_launch.dart';
-import 'package:portfolio/util/layout/responsive_gap.dart';
-import 'package:portfolio/util/layout/responsive_layout_builder.dart';
+import 'package:portfolio/util/util.dart';
 
 class AboutPage extends StatelessWidget {
   AboutPage({

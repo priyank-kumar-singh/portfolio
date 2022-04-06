@@ -22,7 +22,7 @@ abstract class Personal {
 }
 
 abstract class ExternalLinks {
-  static const resume = 'https://1drv.ms/b/s!Avgqr600WXeEiRuYDXRG14hHlsFx?e=WSXnK9';
+  static const resume = 'https://1drv.ms/b/s!Avgqr600WXeEiR-1CInLlk6e32E3?e=vaMbI3';
   static const github = 'https://www.github.com/priyank-kumar-singh';
   static const instagram = 'https://www.instagram.com/priyank_kumar_singh';
   static const medium = 'https://www.medium.com/@priyank-kumar-singh';

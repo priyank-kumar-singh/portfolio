@@ -136,7 +136,7 @@ class ProjectDetails extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        ...items.asMap().entries.map((e) {
+        ...items.map((e) {
           return Padding(
             padding: const EdgeInsets.only(
               left: 8.0,
@@ -147,7 +147,7 @@ class ProjectDetails extends StatelessWidget {
                 text: '- ',
                 children: [
                   TextSpan(
-                    text: e.value,
+                    text: e,
                     style: Theme.of(context).textTheme.bodyText2,
                   ),
                 ],
@@ -174,9 +174,7 @@ class ProjectDetails extends StatelessWidget {
                 },
         );
       }).toList(),
-      interactiveTextStyle: Theme.of(context).textTheme.bodyText2?.copyWith(
-            color: Colors.blue.shade500,
-          ),
+      style: Theme.of(context).textTheme.bodyText2,
       textAlign: TextAlign.justify,
     );
   }

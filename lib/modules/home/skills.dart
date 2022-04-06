@@ -79,6 +79,7 @@ class SkillsPage extends StatelessWidget {
               progressColor: color,
               animation: true,
               lineHeight: lineHeight,
+              barRadius: const Radius.circular(16.0),
             ),
           ),
           const SizedBox(width: 8.0),

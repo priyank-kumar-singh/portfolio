@@ -11,8 +11,8 @@ class SocialMediaButton extends StatelessWidget {
     this.mini = false,
     this.constrainMinWidth = true,
     this.constrainedWidth = 74.0,
-    this.iconBorderRadius,
-    this.iconSize,
+    this.iconBorderRadius = 4.0,
+    this.iconSize = 24.0,
     this.margin = const EdgeInsets.all(8.0),
     this.onTap,
     this.textStyle,
@@ -23,9 +23,9 @@ class SocialMediaButton extends StatelessWidget {
   final bool mini;
   final bool constrainMinWidth;
   final double constrainedWidth;
-  final double? iconSize;
+  final double iconSize;
   final EdgeInsets margin;
-  final double? iconBorderRadius;
+  final double iconBorderRadius;
   final TextStyle? textStyle;
   final GestureTapCallback? onTap;
 
@@ -69,9 +69,9 @@ class SocialMediaButton extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             SizedBox.square(
-              dimension: iconSize ?? 24.0,
+              dimension: iconSize,
               child: ClipRRect(
-                borderRadius: BorderRadius.all(Radius.circular(iconBorderRadius ?? 4.0),
+                borderRadius: BorderRadius.all(Radius.circular(iconBorderRadius),
                 ),
                 child: Visibility(
                   visible: icon != 'Link',

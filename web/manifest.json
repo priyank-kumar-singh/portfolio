@@ -1,9 +1,10 @@
 {
+    "author": "Priyank Kumar Sinhg",
     "name": "Portfolio",
     "short_name": "portfolio",
     "start_url": ".",
     "display": "standalone",
-    "description": "Priyank's Portfolio",
+    "description": "Priyank Kumar Singh's Portfolio",
     "orientation": "portrait-primary",
     "prefer_related_applications": false
 }

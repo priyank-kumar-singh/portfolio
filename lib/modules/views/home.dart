@@ -76,12 +76,8 @@ class _HomeScreenState extends State<HomeScreen> {
           key: Keys.scaffoldBody,
           child: PageView(
             children: [
-              Builder(
-                builder: (context) {
-                  return AboutPage(
-                    onConnect: () => onPageChange(3),
-                  );
-                }
+              AboutPage(
+                onConnect: () => onPageChange(3),
               ),
               const SkillsPage(),
               const WorkPage(),
@@ -118,18 +114,18 @@ class _HomeScreenState extends State<HomeScreen> {
       elevation: 0.0,
       title: currentPage >= 0 ? Text(appBarTitles.elementAt(currentPage)) : null,
       actions: [
-        ...List.generate(4, (index) => index).map((e) {
+        ...List.generate(4, (index) {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: TextButton(
-              child: Text(bottomBarItems.entries.elementAt(e).key),
-              onPressed: () => onPageChange(e),
+              child: Text(bottomBarItems.entries.elementAt(index).key),
+              onPressed: () => onPageChange(index),
               style: const ButtonStyle(
                 // splashFactory:
               ),
             ),
           );
-        }).toList(),
+        }),
         const SizedBox(width: 24.0),
         const SwitchThemeIconButton(),
         const SizedBox(width: 24.0),

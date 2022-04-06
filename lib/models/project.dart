@@ -1,3 +1,5 @@
+import 'package:portfolio/config/config.dart';
+
 import 'work.dart';
 import 'work_prop.dart';
 
@@ -17,5 +19,7 @@ class ProjectItem extends WorkItem {
     asset: asset,
     url: route,
     description: description ?? details.first.value,
-  );
+  ) {
+    Routes.projectRoutes.add(route);
+  }
 }

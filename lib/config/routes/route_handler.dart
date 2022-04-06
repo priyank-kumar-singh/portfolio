@@ -6,8 +6,8 @@ import 'routes.dart';
 abstract class RouteHandler {
   static Route generateRoute(RouteSettings settings) {
     if (settings.name!.startsWith(Routes.projects)) {
-      final route = settings.name!.substring(Routes.projects.length);
-      if (Routes.projectRoutes.contains(route)) {
+      // final route = settings.name!.substring(Routes.projects.length);
+      if (Routes.projectRoutes.contains(settings.name)) {
         return routeBuilder(const ProjectDetails(), settings);
       } else {
         return routeBuilder(const PageNotFoundScreen(), settings);

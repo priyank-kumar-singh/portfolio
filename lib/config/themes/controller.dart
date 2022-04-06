@@ -23,7 +23,7 @@ class AppTheme with ChangeNotifier {
       _currentThemeMode = ThemeMode.light;
       _isDark = _currentThemeMode != ThemeMode.system
         ? _currentThemeMode == ThemeMode.dark
-        : SchedulerBinding.instance?.window.platformBrightness == Brightness.dark;
+        : SchedulerBinding.instance.window.platformBrightness == Brightness.dark;
     }
   }
 
@@ -48,7 +48,7 @@ class AppTheme with ChangeNotifier {
 
   void useSystemThemeMode() {
     _currentThemeMode = ThemeMode.system;
-    _isDark = SchedulerBinding.instance?.window.platformBrightness == Brightness.dark;
+    _isDark = SchedulerBinding.instance.window.platformBrightness == Brightness.dark;
     notifyListeners();
   }
 
